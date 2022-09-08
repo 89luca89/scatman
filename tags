@@ -1,0 +1,146 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	Development	//
+ArrayFlags	pkg/utils/list_arg.go	/^type ArrayFlags []string$/;"	t	line:6	language:Go
+ChrootDir	pkg/utils/chroot_utils.go	/^var ChrootDir string = os.Getenv("HOME") + `\/.local\/share\/scatman\/chroots\/`$/;"	v	line:21	language:Go
+Config	pkg/utils/utils.go	/^type Config struct {$/;"	t	line:24	language:Go
+DiscUsageMegaBytes	pkg/utils/utils.go	/^func DiscUsageMegaBytes(path string) (string, error) {$/;"	f	line:205	language:Go
+DownloadBlobToFile	pkg/pullutils/pullutils.go	/^func DownloadBlobToFile(url string, token string, filename string, progress bool) error {$/;"	f	line:172	language:Go
+DownloadManifest	pkg/pullutils/pullutils.go	/^func DownloadManifest(url string, filename *os.File, token string) error {$/;"	f	line:222	language:Go
+EnsureRootlesskit	pkg/utils/utils.go	/^func EnsureRootlesskit(interactive bool) (bool, error) {$/;"	f	line:141	language:Go
+EnterChroot	pkg/utils/chroot_utils.go	/^func EnterChroot(path string, workdir string, interactive bool, config Config) error {$/;"	f	line:346	language:Go
+EnterNamespace	pkg/utils/chroot_utils.go	/^func EnterNamespace(chroot string, workdir string, interactive bool, config Config) error {$/;"	f	line:306	language:Go
+GetChrootDir	pkg/utils/chroot_utils.go	/^func GetChrootDir(name string) string {$/;"	f	line:24	language:Go
+GetChrootPid	pkg/utils/chroot_utils.go	/^func GetChrootPid(name string) (string, error) {$/;"	f	line:257	language:Go
+GetDockerPullAuthToken	pkg/pullutils/pullutils.go	/^func GetDockerPullAuthToken(image string) (string, error) {$/;"	f	line:134	language:Go
+GetImageDir	pkg/pullutils/pullutils.go	/^func GetImageDir(pullImage ImageInfo) string {$/;"	f	line:75	language:Go
+GetImagePrefixName	pkg/pullutils/pullutils.go	/^func GetImagePrefixName(image string) (string, string, string) {$/;"	f	line:89	language:Go
+GetManifestURL	pkg/pullutils/pullutils.go	/^func GetManifestURL(image string) (string, string) {$/;"	f	line:116	language:Go
+GetRandomName	pkg/createutils/createutils.go	/^func GetRandomName() string {$/;"	f	line:9	language:Go
+GetRootfsDir	pkg/utils/chroot_utils.go	/^func GetRootfsDir(name string) string {$/;"	f	line:33	language:Go
+GetUserIDs	pkg/utils/utils.go	/^func GetUserIDs(username string) (*user.User, error) {$/;"	f	line:227	language:Go
+ImageDir	pkg/pullutils/pullutils.go	/^var ImageDir string = os.Getenv("HOME") + `\/.local\/share\/scatman\/images\/`$/;"	v	line:71	language:Go
+ImageInfo	pkg/pullutils/pullutils.go	/^type ImageInfo struct {$/;"	t	line:19	language:Go
+IsRunning	pkg/utils/chroot_utils.go	/^func IsRunning(name string, running string) bool {$/;"	f	line:240	language:Go
+LoadConfig	pkg/utils/utils.go	/^func LoadConfig(path string) (Config, error) {$/;"	f	line:188	language:Go
+ManifestJSON	pkg/pullutils/pullutils.go	/^var ManifestJSON string = `$/;"	v	line:56	language:Go
+MapFlags	pkg/utils/map_arg.go	/^type MapFlags map[string]string$/;"	t	line:6	language:Go
+Mount	pkg/utils/utils.go	/^func Mount(source string, dest string, flags uintptr, mode string) error {$/;"	f	line:283	language:Go
+NewCpCommand	cmd/cp.go	/^func NewCpCommand() *cobra.Command {$/;"	f	line:32	language:Go
+NewCreateCommand	cmd/create.go	/^func NewCreateCommand() *cobra.Command {$/;"	f	line:45	language:Go
+NewEnterCommand	cmd/enter.go	/^func NewEnterCommand() *cobra.Command {$/;"	f	line:137	language:Go
+NewExecCommand	cmd/exec.go	/^func NewExecCommand() *cobra.Command {$/;"	f	line:42	language:Go
+NewImagesCommand	cmd/images.go	/^func NewImagesCommand() *cobra.Command {$/;"	f	line:29	language:Go
+NewLogsCommand	cmd/logs.go	/^func NewLogsCommand() *cobra.Command {$/;"	f	line:44	language:Go
+NewPsCommand	cmd/ps.go	/^func NewPsCommand() *cobra.Command {$/;"	f	line:36	language:Go
+NewPullCommand	cmd/pull.go	/^func NewPullCommand() *cobra.Command {$/;"	f	line:38	language:Go
+NewRmCommand	cmd/rm.go	/^func NewRmCommand() *cobra.Command {$/;"	f	line:38	language:Go
+NewRmiCommand	cmd/rmi.go	/^func NewRmiCommand() *cobra.Command {$/;"	f	line:36	language:Go
+NewStartCommand	cmd/start.go	/^func NewStartCommand() *cobra.Command {$/;"	f	line:35	language:Go
+NewStopCommand	cmd/stop.go	/^func NewStopCommand() *cobra.Command {$/;"	f	line:37	language:Go
+PrepareRootfs	pkg/utils/chroot_utils.go	/^func PrepareRootfs(image string, name string) error {$/;"	f	line:43	language:Go
+SaveConfig	pkg/utils/utils.go	/^func SaveConfig(config Config, path string) error {$/;"	f	line:181	language:Go
+ScatmanExtraPath	pkg/utils/utils.go	/^var ScatmanExtraPath string = os.Getenv("HOME") + "\/.local\/share\/scatman\/bin\/"$/;"	v	line:41	language:Go
+Set	pkg/utils/list_arg.go	/^func (i *ArrayFlags) Set(value string) error {$/;"	f	line:21	language:Go
+Set	pkg/utils/map_arg.go	/^func (i *MapFlags) Set(value string) error {$/;"	f	line:26	language:Go
+SetupBusybox	pkg/utils/utils.go	/^func SetupBusybox(links []string) error {$/;"	f	line:74	language:Go
+SetupRootlesskit	pkg/utils/utils.go	/^func SetupRootlesskit() error {$/;"	f	line:44	language:Go
+StarterJSON	pkg/pullutils/pullutils.go	/^var StarterJSON string = `$/;"	v	line:29	language:Go
+StopChroot	pkg/utils/chroot_utils.go	/^func StopChroot(name string, force bool) error {$/;"	f	line:268	language:Go
+String	pkg/utils/list_arg.go	/^func (i *ArrayFlags) String() string {$/;"	f	line:9	language:Go
+String	pkg/utils/map_arg.go	/^func (i *MapFlags) String() string {$/;"	f	line:9	language:Go
+StringContains	pkg/utils/utils.go	/^func StringContains(s []string, e string) bool {$/;"	f	line:249	language:Go
+Type	pkg/utils/list_arg.go	/^func (i *ArrayFlags) Type() string {$/;"	f	line:28	language:Go
+Type	pkg/utils/map_arg.go	/^func (i *MapFlags) Type() string {$/;"	f	line:36	language:Go
+Umount	pkg/utils/utils.go	/^func Umount(dest string) error {$/;"	f	line:259	language:Go
+UntarFile	pkg/utils/utils.go	/^func UntarFile(path string, target string) error {$/;"	f	line:121	language:Go
+Value	pkg/utils/list_arg.go	/^func (i *ArrayFlags) Value() []string {$/;"	f	line:15	language:Go
+Value	pkg/utils/map_arg.go	/^func (i *MapFlags) Value() map[string]string {$/;"	f	line:20	language:Go
+Version	main.go	/^var Version string = "0.0.1"$/;"	v	line:42	language:Go
+checkFilter	cmd/ps.go	/^func checkFilter(filter string, conf utils.Config, running string) bool {$/;"	f	line:174	language:Go
+cmd	cmd/cp.go	/^package cmd$/;"	p	line:1	language:Go
+cmd	cmd/create.go	/^package cmd$/;"	p	line:1	language:Go
+cmd	cmd/enter.go	/^package cmd$/;"	p	line:1	language:Go
+cmd	cmd/exec.go	/^package cmd$/;"	p	line:1	language:Go
+cmd	cmd/images.go	/^package cmd$/;"	p	line:1	language:Go
+cmd	cmd/logs.go	/^package cmd$/;"	p	line:1	language:Go
+cmd	cmd/ps.go	/^package cmd$/;"	p	line:1	language:Go
+cmd	cmd/pull.go	/^package cmd$/;"	p	line:1	language:Go
+cmd	cmd/rm.go	/^package cmd$/;"	p	line:1	language:Go
+cmd	cmd/rmi.go	/^package cmd$/;"	p	line:1	language:Go
+cmd	cmd/start.go	/^package cmd$/;"	p	line:1	language:Go
+cmd	cmd/stop.go	/^package cmd$/;"	p	line:1	language:Go
+conf	cmd/enter.go	/^	var conf utils.Config$/;"	v	line:157	language:Go
+copy	cmd/cp.go	/^func copy(src string, dest string) error {$/;"	f	line:84	language:Go
+cp	cmd/cp.go	/^func cp(cmd *cobra.Command, arguments []string) error {$/;"	f	line:48	language:Go
+cpCommand	cmd/cp.go	/^	var cpCommand = &cobra.Command{$/;"	v	line:33	language:Go
+cpHelp	cmd/cp.go	/^func cpHelp(*cobra.Command) error {$/;"	f	line:13	language:Go
+create	cmd/create.go	/^func create(cmd *cobra.Command, arguments []string) error {$/;"	f	line:72	language:Go
+createCommand	cmd/create.go	/^	var createCommand = &cobra.Command{$/;"	v	line:46	language:Go
+createHelp	cmd/create.go	/^func createHelp(*cobra.Command) error {$/;"	f	line:14	language:Go
+createutils	pkg/createutils/createutils.go	/^package createutils$/;"	p	line:1	language:Go
+dependencies	main.go	/^var dependencies []string = []string{$/;"	v	line:44	language:Go
+discUsage	pkg/utils/utils.go	/^	var discUsage int64 = 0$/;"	v	line:206	language:Go
+enter	cmd/enter.go	/^func enter(cobraCmd *cobra.Command, arguments []string) error {$/;"	f	line:151	language:Go
+enterCommand	cmd/enter.go	/^	var enterCommand = &cobra.Command{$/;"	v	line:138	language:Go
+err	cmd/pull.go	/^	var err error$/;"	v	line:56	language:Go
+execCommand	cmd/exec.go	/^	var execCommand = &cobra.Command{$/;"	v	line:43	language:Go
+execHelp	cmd/exec.go	/^func execHelp(*cobra.Command) error {$/;"	f	line:13	language:Go
+execute	cmd/exec.go	/^func execute(cmd *cobra.Command, arguments []string) error {$/;"	f	line:65	language:Go
+findChrootProcesses	pkg/utils/chroot_utils.go	/^func findChrootProcesses(name string) ([]string, error) {$/;"	f	line:153	language:Go
+findChrootSubProcesses	pkg/utils/chroot_utils.go	/^func findChrootSubProcesses(name string) ([]string, error) {$/;"	f	line:121	language:Go
+for	pkg/utils/list_arg.go	/^\/\/ ArrayFlags is a custom array type for flags.$/;"	t	line:5	language:Go
+for	pkg/utils/map_arg.go	/^\/\/ MapFlags is a custom map type for flags.$/;"	t	line:5	language:Go
+getLastLine	cmd/logs.go	/^func getLastLine(file *os.File) int {$/;"	f	line:63	language:Go
+handleSingleManifest	cmd/pull.go	/^func handleSingleManifest(jsonParsed *gabs.Container, pullImage pullutils.ImageInfo) error {$/;"	f	line:55	language:Go
+help	main.go	/^func help(*cobra.Command) error {$/;"	f	line:54	language:Go
+images	cmd/images.go	/^func images(cmd *cobra.Command, arguments []string) error {$/;"	f	line:46	language:Go
+imagesCommand	cmd/images.go	/^	var imagesCommand = &cobra.Command{$/;"	v	line:30	language:Go
+imagesHelp	cmd/images.go	/^func imagesHelp(*cobra.Command) error {$/;"	f	line:17	language:Go
+interpretManifest	cmd/pull.go	/^func interpretManifest(jsonPath string, pullImage pullutils.ImageInfo) error {$/;"	f	line:210	language:Go
+letters	pkg/createutils/createutils.go	/^	var letters = []rune("abcdefghijklmnopqrstuvwxyz0123456789")$/;"	v	line:10	language:Go
+logs	cmd/logs.go	/^func logs(cmd *cobra.Command, arguments []string) error {$/;"	f	line:79	language:Go
+logsCommand	cmd/logs.go	/^	var logsCommand = &cobra.Command{$/;"	v	line:45	language:Go
+logsHelp	cmd/logs.go	/^func logsHelp(*cobra.Command) error {$/;"	f	line:18	language:Go
+main	main.go	/^func main() {$/;"	f	line:134	language:Go
+main	main.go	/^package main$/;"	p	line:1	language:Go
+newApp	main.go	/^func newApp() (*cobra.Command, error) {$/;"	f	line:79	language:Go
+performBasicMounts	cmd/enter.go	/^func performBasicMounts(path string, conf utils.Config) error {$/;"	f	line:17	language:Go
+performCustomMounts	cmd/enter.go	/^func performCustomMounts(path string, conf utils.Config) error {$/;"	f	line:85	language:Go
+performPTSMount	cmd/enter.go	/^func performPTSMount(path string) error {$/;"	f	line:121	language:Go
+ps	cmd/ps.go	/^func ps(cmd *cobra.Command, arguments []string) error {$/;"	f	line:57	language:Go
+psCommand	cmd/ps.go	/^	var psCommand = &cobra.Command{$/;"	v	line:37	language:Go
+psHelp	cmd/ps.go	/^func psHelp(*cobra.Command) error {$/;"	f	line:15	language:Go
+pull	cmd/pull.go	/^func pull(cmd *cobra.Command, arguments []string) error {$/;"	f	line:253	language:Go
+pullCommand	cmd/pull.go	/^	var pullCommand = &cobra.Command{$/;"	v	line:39	language:Go
+pullHelp	cmd/pull.go	/^func pullHelp(*cobra.Command) error {$/;"	f	line:24	language:Go
+pullutils	pkg/pullutils/pullutils.go	/^package pullutils$/;"	p	line:1	language:Go
+result	pkg/utils/chroot_utils.go	/^	var result []string$/;"	v	line:108	language:Go
+rm	cmd/rm.go	/^func rm(cmd *cobra.Command, arguments []string) error {$/;"	f	line:58	language:Go
+rmCommand	cmd/rm.go	/^	var rmCommand = &cobra.Command{$/;"	v	line:39	language:Go
+rmHelp	cmd/rm.go	/^func rmHelp(*cobra.Command) error {$/;"	f	line:13	language:Go
+rmi	cmd/rmi.go	/^func rmi(cmd *cobra.Command, arguments []string) error {$/;"	f	line:54	language:Go
+rmiCommand	cmd/rmi.go	/^	var rmiCommand = &cobra.Command{$/;"	v	line:37	language:Go
+rmiHelp	cmd/rmi.go	/^func rmiHelp(*cobra.Command) error {$/;"	f	line:13	language:Go
+rootCmd	main.go	/^	var rootCmd = &cobra.Command{$/;"	v	line:80	language:Go
+setEnviron	main.go	/^func setEnviron() error {$/;"	f	line:108	language:Go
+setProcessKeepIDMaps	pkg/utils/chroot_utils.go	/^func setProcessKeepIDMaps(userns string, cmd *exec.Cmd, uid int, gid int) {$/;"	f	line:200	language:Go
+setupCloseHandler	cmd/pull.go	/^func setupCloseHandler(dir string) {$/;"	f	line:239	language:Go
+skibidi	main.go	/^var skibidi string = `$/;"	v	line:16	language:Go
+start	cmd/start.go	/^func start(cmd *cobra.Command, arguments []string) error {$/;"	f	line:54	language:Go
+startCommand	cmd/start.go	/^	var startCommand = &cobra.Command{$/;"	v	line:36	language:Go
+startHelp	cmd/start.go	/^func startHelp(*cobra.Command) error {$/;"	f	line:13	language:Go
+stop	cmd/stop.go	/^func stop(cmd *cobra.Command, arguments []string) error {$/;"	f	line:56	language:Go
+stopCommand	cmd/stop.go	/^	var stopCommand = &cobra.Command{$/;"	v	line:38	language:Go
+stopHelp	cmd/stop.go	/^func stopHelp(*cobra.Command) error {$/;"	f	line:13	language:Go
+targetDIR	cmd/pull.go	/^var targetDIR string$/;"	v	line:22	language:Go
+uid	pkg/utils/chroot_utils.go	/^	var uid, gid int64$/;"	v	line:352	language:Go
+unique	pkg/utils/chroot_utils.go	/^func unique(s []string) []string {$/;"	f	line:105	language:Go
+utils	pkg/utils/chroot_utils.go	/^package utils$/;"	p	line:1	language:Go
+utils	pkg/utils/list_arg.go	/^package utils$/;"	p	line:1	language:Go
+utils	pkg/utils/map_arg.go	/^package utils$/;"	p	line:1	language:Go
+utils	pkg/utils/utils.go	/^package utils$/;"	p	line:1	language:Go
+waitGroup	cmd/logs.go	/^	var waitGroup sync.WaitGroup$/;"	v	line:110	language:Go
