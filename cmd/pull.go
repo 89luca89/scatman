@@ -307,7 +307,7 @@ func pull(cmd *cobra.Command, arguments []string) error {
 		}
 
 		log.Printf("Trying to pull %s ...\n", image)
-		// interpre downloaded manifest, and download all the blobs
+		// interpret downloaded manifest, and download all the blobs
 		err = interpretManifest(file.Name(), pullImage)
 		if err != nil {
 			os.RemoveAll(targetDIR)

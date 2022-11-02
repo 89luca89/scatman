@@ -123,3 +123,28 @@ func images(cmd *cobra.Command, arguments []string) error {
 	t.Render()
 	return nil
 }
+
+func isImageLocal(imageName string) bool{
+	files, err := os.ReadDir(pullutils.ImageDir);
+	if(err != nil){
+		log.Printf("ERROR: %v", err)
+		return false;
+	}
+	for _, file := range files{
+		if(!file.IsDir()){
+			continue;
+		}
+
+		decodedImageName, err_two := base64.StdEncoding.DecodeString(file.Name());
+		// log.Println("decodedImageName: ", string(decodedImageName[:]))
+		if(err_two != nil){
+			log.Printf("ERROR: %v", err_two)
+			return false;
+		}
+
+		if (strings.Contains(string(decodedImageName[:]), imageName)){
+			return true;
+		}
+	}
+	return false;
+} // end isImageLocal

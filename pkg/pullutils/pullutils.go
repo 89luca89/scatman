@@ -109,7 +109,7 @@ func GetImagePrefixName(image string) (string, string, string) {
 	return strings.Join(imageBase[:len(imageBase)-1], "/"), imageName, tag
 }
 
-// GetManifestURL will strt fom a string like docker.io/almalinux/almalinux-8:latest
+// GetManifestURL will start from a string like docker.io/almalinux/almalinux-8:latest
 // and return an registry manifest API url like:
 // https://{{registry url}}/v2/{{ name }}/{{ subname }}/{{ tag/digest }}
 // and return it.
